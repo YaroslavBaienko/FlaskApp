@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ADVOCACY.OD.UA | ПРО АДВОКАТА</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2XJG7PHCW"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-F2XJG7PHCW');
+
+
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-5GCGRCJ');
+
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215424506-1">
+    </script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-215424506-1');
+
+
+
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1345191162373175"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GCGRCJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="header">
+    <div>
+        <a href="{{ url_for('index') }}" class="logo">
+            <h1>АДВОКАТ БАЕНКО</h1>
+        </a> <span>Связаться с адвокатом<b>+38 (063)145-89-76</b></span>
+    </div>
+    <ul>
+        <li>
+            <a href="{{ url_for('index') }}">Главная</a>
+        </li>
+        <li>
+            <a href="{{ url_for('services') }}">Услуги</a>
+        </li>
+        <li>
+            <a href="{{ url_for('process') }}">Практика</a>
+        </li>
+        <li>
+            <a href="{{ url_for('blog') }}">Блог</a>
+        </li>
+        <li>
+            <a href="{{ url_for('about') }}">Про адвоката</a>
+        </li>
+        <li>
+            <a href="{{ url_for('contact') }}">Особое мнение</a>
+        </li>
+        <li class="selected">
+            <a href="{{ url_for('calc') }}">Калькулятор</a>
+        </li>
+    </ul>
+</div>
+<div id="body">
+    <div class="container" style="padding-top:50px">
+        <h3>КАЛЬКУЛЯТОР СКОРОСТИ</h3>
+        <br><br>
+        <form method="post" action="/calc">
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label>Enter distance in km</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" name="distance" value="{{ distance }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label>Enter time in hours</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" name="time" value="{{time}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div style="text:align:center" class="col-sm-12">
+                    <button type="submit" class="btn btn-primary">Calculate speed</button>
+                </div>
+            </div>
+          <div>
+            <p style="font-weight:bold; font-sige: 30px; color: green">Speed {{ speed }} km/hr</p>
+          </div>
+        </form>
+    </div>
+</div>
+<div id="footer">
+</div>
+<div class="container">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="height:75px; width:560px">
+        <tbody>
+        <tr>
+            <td style="height:75px; text-align:center; vertical-align:middle; width:560px">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<span id="hotlog_counter"></span>
+<span id="hotlog_dyn"></span>
+<script type="text/javascript"> var hot_s = document.createElement('script');
+		hot_s.type = 'text/javascript'; hot_s.async = true;
+		hot_s.src = 'http://js.hotlog.ru/dcounter/2598598.js';
+		hot_d = document.getElementById('hotlog_dyn');
+		hot_d.appendChild(hot_s);
+
+
+
+</script>
+<noscript>
+    <a href="http://click.hotlog.ru/?2598598" target="_blank">
+        <img src="http://hit5.hotlog.ru/cgi-bin/hotlog/count?s=2598598&im=307" border="0" title="HotLog"
+             alt="HotLog"></a>
+</noscript>
+<!-- /HotLog -->
+</body>
+
+</html>
